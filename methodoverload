@@ -1,0 +1,30 @@
+public class overmethod {
+int area;
+
+	public void getArea(int a)
+	{
+		area = a * a;
+		System.out.println("Area of square " + area);
+	}
+	public void getArea(int len, int wid)
+	{
+		area = len * wid;
+		System.out.println("Area of rectangel is: " + area);
+	}
+	public void getArea(float a)
+	{
+		float area;
+		area = a * a;
+		System.out.println("Area of square(float) " + area);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     
+		overmethod om = new overmethod();
+		om.getArea(3);
+		om.getArea(3f);
+		om.getArea(3,2);
+	}
+
+}
